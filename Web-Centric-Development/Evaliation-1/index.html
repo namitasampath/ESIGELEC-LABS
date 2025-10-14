@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main">
+        <img src="esigelecLogo.png" alt = "ESIGELEC Logo" class="logo">
+        <h2>Forum</h2>
+        <form>Registration form
+            <fieldset> <!--For the box-->
+            
+            <label for="first">First name:</label>
+            <input type = "text" id="first" placeholder="insert your first name"  required><br>
+            <label for="first">Last name: </label>
+            <input type = "text" id="last" placeholder="insert your last name"  required><br>
+            <label for="email">Email: </label>
+            <input type = "email" id="email" placeholder="insert your email" required><br>
+            <hr>
+            <label>Status:</label>
+            <input type="radio" name="status" value="Teacher">
+            <label>Teacher</label>
+            <input type="radio" name="status" value="Student">
+            <label>Student</label><br>
+
+
+            <label for="year">If student, year:</label>
+            <select name="year" id="year">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            </select><br>
+            <label for="picture">Picture</label>
+            <input type="file" id="picture" accept="image/*"><br>
+            <hr>
+            <label>Username: </label>
+            <input type = "text" id="username" placeholder="insert your username"  required><br>
+            <label>Password: </label>
+            <input type="password" id="password" required><br>
+            
+            </fieldset>
+            <div class="buttons">
+            <button type="submit" >Submit</button>
+            <button type="reset" >Erase</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

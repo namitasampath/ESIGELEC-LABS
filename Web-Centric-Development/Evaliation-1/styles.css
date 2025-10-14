@@ -1,0 +1,45 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #fff;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.main 
+{ width: 450px;
+margin: 100px auto;
+
+}
+
+fieldset{
+    border-color: #ccc;
+    border-radius: 3px;
+}
+.logo{
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    width: 120px;
+}
+input, select, label {
+    margin-bottom: 10px;   
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+}
+.buttons {
+    text-align: center;
+    margin-top: 10px;
+}
+
+button{
+    background-color: rgb(29, 125, 16);
+    padding: 2px 6px;
+    cursor: pointer;
+    color: white;
+    border-radius: 10%;
+}
