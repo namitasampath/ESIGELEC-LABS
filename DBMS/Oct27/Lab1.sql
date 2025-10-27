@@ -210,46 +210,46 @@ SELECT 'Name: ' || CST_FIRST_NAME || ' '|| (UPPER)CST_LAST_NAME || 'Email: ' || 
 FROM customer_cst; 
 
 //12. List shows with a duration greater or equal to 90 minutes or a not null description (shw_desc)
-select * 
-from show_shw
-where shw_duration >= 90 or shw_desc is NOT NULL;
+SELECT * 
+FROM show_shw
+WHERE shw_duration >= 90 OR shw_desc IS NOT NULL;
 
 //13. Customers who have an email address at ‘machin.fr’
-select * 
-from customer_cst
-where cst_email like '%machin.fr%';
+SELECT * 
+FROM CUSTOMER_CST
+WHERE CST_EMAIL LIKE '%machin.fr%';
 
 //14. List all shows that have a title beginning with the uppercase letter L
-select *
-from show_shw
-where shw_title like 'L%';
+SELECT *
+FROM show_shw
+WHERE shw_title LIKE 'L%';
 
 //15. List all shows with the character ! as the last character in the title
-select *
-from show_shw
-where shw_title like '%!';
+SELECT *
+FROM show_shw
+WHERE shw_title LIKE '%!';
 
 //16. List shows with a duration between 75 and 100 (use the between…AND operator)
-select * 
-from show_shw
-where shw_duration between 75 and 100;
+SELECT * 
+FROM show_shw
+WHERE shw_duration BETWEEN 75 AND 100;
 
 //17. Print the total number of bookings
-select count(*)
-from booking_bkg;
+SELECT COUNT(*)
+FROM booking_bkg;
 
 //18. Print the highest show duration
-select max(shw_duration)
-from show_shw;
+SELECT MAX(shw_duration)
+FROM show_shw;
 
 //19. Print the number of distinct values of booking dates
-select DISTINCT count(bkg_date)
-from booking_bkg
+SELECT DISTINCT COUNT(bkg_date)
+FROM booking_bkg
 
 //20. Print the average show duration and round the value produced to 1 decimal 
-select round(avg(shw_duration), 1)
-from show_shw;
+SELECT ROUND(AVG(shw_duration), 1)
+FROM show_shw;
 
 //21. List the show title and date with the date format similar to 12 – June - 2022
-select shw_title, to_char(shw_date, 'dd-month-yyyy')
-from show_shw;
+SELECT shw_title, to_char(shw_date, 'dd-month-yyyy')
+FROM show_shw;
