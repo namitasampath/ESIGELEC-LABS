@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Form</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <script  src="js/file.js"></script>
+  </head>
+  <body>
+    <div id="page">
+      <div id="top">
+        <img id="logo" src="images/logo.png" alt="logo" height="58">
+        <h1>Form</h1>
+      </div>
+      <p id="probleme"></p>
+      <form name="myform" method="post" enctype="text/plain">
+        <fieldset>
+          <legend>Details:</legend>
+          <label for="name">Name: </label><input placeholder="Please Enter Your Name"  id="name" name="name" type="text" size="30"><br>
+          <label for="email">E-mail: </label><input placeholder="Please Enter Your Email" id="email" name="email" type="text" size="30"><br>
+          <label for="age">Age: </label><input placeholder="Please Enter Your Age" id="age" name="email" type="number"><br>
+          </fieldset>
+        <fieldset>
+          <legend>Message :</legend>
+          <textarea rows="4" cols="50"></textarea><br>
+          
+        </fieldset>
+        <input type="button" value="Send" onclick="verification();"/>
+        <input type="button" value="Erase" onclick="erase();"/>
+      </form>
+    
+    </div>
+  </body>
+</html>
